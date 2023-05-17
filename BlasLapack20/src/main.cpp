@@ -1,10 +1,5 @@
 #include <iostream>
-
-extern "C"
-{
-	void cblas_saxpy(int n, float sa, float* sx, int incx, float* sy, int incy);
-	void saxpy_(int* n, float* alpha, float* x, int* incx, float* y, int* incy);
-}
+#include "cblas_inc.h"
 
 int main()
 {
